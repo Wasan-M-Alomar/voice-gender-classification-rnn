@@ -64,11 +64,19 @@ Applications include voice-based user interfaces, speech analytics and personali
 
 Training and validation curves track each other closely, and the final test loss (0.0685) is within 0.02 of the training loss, showing that the model generalizes well rather than memorizing the training data.
 
+## Project Report
+
+📄 The full [project report](docs/voice_gender_report.pdf) covers the background, algorithm explanation, advantages and limitations, methodology and pseudocode.
+
+> **Note:** The notebook contains the **final, improved version** of the model, developed after the report was written. Where the two differ (for example the dataset size, architecture details or train-test split described in the report's appendix), the notebook and the results in this README reflect the latest version.
+
 ## Repository Structure
 
 ```
 ├── notebooks/
 │   └── voice_gender_rnn.ipynb   # full pipeline: preprocessing → RNN → training → evaluation → audio inference
+├── docs/
+│   └── voice_gender_report.pdf  # project report
 ├── assets/                      # result charts
 ├── requirements.txt
 └── README.md
@@ -118,5 +126,11 @@ Training and validation curves track each other closely, and the final test loss
 ## التقنيات المستخدمة
 
 Python · TensorFlow / Keras · scikit-learn · librosa · Pandas · NumPy · Matplotlib · Seaborn
+
+## تقرير المشروع
+
+📄 [تقرير المشروع](docs/voice_gender_report.pdf) يشرح الخلفية العلمية، وآلية عمل الخوارزمية، والمزايا والقيود، والمنهجية.
+
+> **ملاحظة:** الكود يمثّل **النسخة النهائية المحسّنة** من النموذج، وقد طُوّرت بعد كتابة التقرير. وعند وجود اختلاف بينهما (مثل حجم البيانات أو تفاصيل المعمارية أو نسبة تقسيم البيانات في ملحق التقرير)، فإن الكود والنتائج المعروضة هنا تعكس أحدث نسخة.
 
 </div>
